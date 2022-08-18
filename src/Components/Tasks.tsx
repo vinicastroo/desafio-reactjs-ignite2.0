@@ -75,7 +75,7 @@ export function Tasks() {
 
       {
         tasks.map(task => {
-          return (<Task task={task} onCheckedTask={handleCheckedTask} onDeletedTask={handleDeleteTask} />)
+          return (<Task key={task.id} task={task} onCheckedTask={handleCheckedTask} onDeletedTask={handleDeleteTask} />)
         })
       }
 
